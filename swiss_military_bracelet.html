@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang = "en, mk">
+    <head>
+        <link rel="icon" href="DWATCH_icon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="DWATCH_icon.png" type="image/x-icon">
+        <meta charset = "UTF-8" lang = "en-US">
+        <title>D WATCH</title>
+        <link rel = "stylesheet" href = "styles.css">
+        
+        <script src="scripts.js" lang = "Javascript">
+            
+        </script>
+    </head>
+
+    <body>
+        <header>
+            <div id="content">
+                <button id="loginButton" onclick="najava()" style="position:absolute; left: 50px; bottom: 50px; margin: auto; width:100px">Најава</button>
+            </div>
+            
+            <a href="home.html"><h2>D WATCH</h2></a>
+            <nav>
+                <ul>
+                    <!--Prva kategorija-->
+                    <li class="dropdown">
+                        <p class="headerMenus">Часовници &nbsp;V</p>
+                        <ul class="dropdown-content">
+                            <li><a href="calvin_klein.html">Calvin Klein</a></li>
+                            <li><a href="fossil.html">Fossil</a></li>
+                            <li><a href="maserati.html">Maserati</a></li>
+                            <li><a href="rolex.html">Rolex</a></li>
+                            <li><a href="swiss_military.html">Swiss Military</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!--Vtora kategorija-->
+                    <li class="dropdown">
+                        <p class="headerMenus">Накит &nbsp;V</p>
+                        <ul class="dropdown-content">
+                            <li><a href="calvin_klein.html">Calvin Klein</a></li>
+                            <li><a href="fossil.html">Fossil</a></li>
+                            <li><a href="maserati.html">Maserati</a></li>
+                            <li><a href="rolex.html">Rolex</a></li>
+                            <li><a href="swiss_military.html">Swiss Military</a></li>
+                        </ul>
+                    </li>
+
+                    <!--Treta kategorija-->
+                    <li class="dropdown">
+                        <a href="brendovi.html">
+                            <p class="headerMenus">Брендови &nbsp;V</p></a>
+                        <ul class="dropdown-content">
+                            <li><a href="calvin_klein.html">Calvin Klein</a></li>
+                            <li><a href="fossil.html">Fossil</a></li>
+                            <li><a href="maserati.html">Maserati</a></li>
+                            <li><a href="rolex.html">Rolex</a></li>
+                            <li><a href="swiss_military.html">Swiss Military</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div id="content">
+                <br><br><br><br><br><br>
+                    <center>
+                        <div>
+                            <ul class="horizontalItems">
+                                <li style="flex:1">
+                                    <a href="#">
+                                        <img src="men_jewelry/swiss_military_bracelet.jpg" alt="Swiss Military Bracelet" style="padding:10px"><br>
+                                        <p>Swiss Military Алка</p>
+                                        <p>ЦЕНА: 3599.99 ден.</p>
+                                    </a>
+
+                                    <button class="likeButton" onclick="like()">Like</button>
+                                    <span class="likeCounter" id="counter">0</span><p></p>
+                                            
+                                    <div class="commentBox">
+                                        <label for="commentName">Име</label>
+                                        <input type="text" id="commentName" name="commentName"><p></p>
+                                        <textarea id="newComment" rows="4" cols="30" placeholder="Внесете го вашиот коментар тука"></textarea><br>
+                                        <button id="addCommentButton">Додади</button>
+                                        <button id="removeCommentsButton">Избриши</button>
+                                    </div>
+                                        <div class="commentContainer" id="commentContainer">
+                                        <p class="comment"></p>
+                                    </div>
+                                </li>
+                                <li style="flex:2">
+                                    <p style="font-family: monospace, Arial, Helvetica, sans-serif; font-weight: normal; font-size: x-large;">НАРАЧКА</p>
+                                    <form class="customForm">
+                                        <div class="customDiv">
+                                            <label class="customLabel" for="name">Име и презиме</label>
+                                            <input class="customInput" type="text" id="name" name="name">
+                                        </div>
+                                        <div class="customDiv">
+                                            <label class="customLabel" for="email">Email</label>
+                                            <input class="customInput" type="text" id="email" name="email"><br>
+                                        </div>
+                                        <div class="customDiv">
+                                            <label class="customLabel" for="telNum">Телефонски број</label>
+                                            <input class="customInput" type="text" id="telNum" name="telNum">
+                                        </div>
+                                        <div class="customDiv">
+                                            <label class="customLabel" for="size">Големина</label>
+                                                <input class="customInput" type="radio" id="sizeS" name="size">Small
+                                                <input class="customInput" type="radio" id="sizeM" name="size">Medium
+                                                <input class="customInput" type="radio" id="sizeL" name="size">Large
+                                        </div>
+                                        <div class="customDiv">
+                                            <input class="customInput" type="submit" id="submit">
+                                        </div>
+                                </li>
+
+                                <li>
+                                    <form class="customForm">
+                                        <div class="customDiv">
+                                            <p style="font-family: monospace, Arial, Helvetica, sans-serif; font-weight: normal; font-size: x-large;">АНКЕТА</p>
+                                        </div><br>
+                                        <div class="customDiv">
+                                            <textarea style="background-color: black; color:white;"rows="20" cols="50" placeholder="Внесете ги вашите импресии/критики за овој производ тука"></textarea>
+                                        </div><br>
+                                        <div class="customDiv">
+                                            <input class="customInput" type="submit">
+                                        </div>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                    </center>
+                <br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+        </main>
+
+        <footer id="mainFooter">
+            <a href="home.html"><h2>&copy; D WATCH</h2></a>
+            <p>Контакт информации: +073-967/246&nbsp;&nbsp;|&nbsp;&nbsp;dwatch-noreply@gmail.com</p>
+            <p>Следете не на социјални медиуми:  
+                <div>
+                    <img src="socialMediaLogos/facebook_logo.jpg" class="logo" alt="Facebook logo">D WATCH
+                    <img src="socialMediaLogos/instagram_logo.jpg" class="logo" alt="Instagram logo">dwatch
+                </div>
+            </p>
+        </footer>
+    </body>
+</html>
