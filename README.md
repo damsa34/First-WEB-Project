@@ -1,4 +1,4 @@
-# First university website project
+# First website project
 This project was created with pure HTML, CSS, JavaScript for educational purposes.
 The contents of the website are in Macedonian language, without English support.
 
